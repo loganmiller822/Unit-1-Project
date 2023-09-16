@@ -1,27 +1,33 @@
 ﻿@model MatrixModel
 @{
+    ViewBag.Title = "Results";
 }
-<div class="header">
-    <h1 class="header-text">Results</h1>
-</div>
-<div class="nav-container">
-    <div class="nav">
-        <div class="nav-item"><a asp-controller="Home" asp-action="Index">Home</a></div>
-        <div class="nav-item"><a asp-controller="Form" asp-action="Index">Form</a></div>
-        <div class="nav-item"><a asp-controller="Contact" asp-action="Index">Contact</a></div>
+<div class="main">
+    <div class="header">
+        <h1 class="header-text">Results</h1>
     </div>
-
-</div>
-<div>
-    @if (ViewBag.Result != null)
-    {
-        <p>Result: @ViewBag.Result</p>
-        <p>For a visual representation of matricies in Euclidean space you can visit the <a href="https://www.khanacademy.org/computer-programming/linear-transformation-playground-determinant-edition/6721406349426688" target="_blank">matrix interactive simulator</a> for more information.</p>
-    }
-    else
-    {
-        <p>Fatal error, please input integers only. If you wish to leave a space blank, insert a "0"</p>
-    }
+    <div class="nav-container">
+        <div class="nav">
+            <div class="nav-item"><a asp-controller="Home" asp-action="Index">Home</a></div>
+            <div class="nav-item"><a asp-controller="Form" asp-action="Index">Form</a></div>
+            <div class="nav-item"><a asp-controller="Contact" asp-action="Index">Contact</a></div>
+        </div>
+    </div>
+    <div class="results">
+        @if (ViewBag.Result != null)
+        {
+            <p>Result: @ViewBag.Result</p>
+            <p>
+                For a visual representation of matricies in Euclidean space you can visit the
+                <a href="https://www.khanacademy.org/computer-programming/linear-transformation-playground-determinant-edition/6721406349426688" target="_blank">matrix interactive simulator</a>
+                for more information.
+            </p>
+        }
+        else
+        {
+            <p>Fatal error, please input integers only. If you wish to leave a space blank, insert a "0"</p>
+        }
+    </div>
 </div>
 
 <!--Matrix determinant equation num1 * num4 - num2 * num3 -->

@@ -13,14 +13,21 @@
             <div class="nav-item"><a asp-controller="Contact">Contact</a></div>
         </div>
     </div>
-    <div>
-        <form asp-controller="Form" asp-action="DisplayActionName" method="post">
-            <input asp-for="Num1" type="text" />
-            <input asp-for="Num2" type="text" />
-            <br>
-            <input asp-for="Num3" type="text" />
-            <input asp-for="Num4" type="text" />
-            <button type="submit">Submit</button>
-        </form>
+    <div class="form-container">
+        <div class="form">
+            <form asp-controller="Form" asp-action="DisplayActionName" method="post">
+                <div class="form-input-group">
+                    <input asp-for="Num1" type="text" class="form-input" />
+                    <div class="space"></div>
+                    <input asp-for="Num2" type="text" class="form-input" />
+                </div>
+                <div class="form-input-group">
+                    <input asp-for="Num3" type="text" class="form-input" />
+                    <div class="space"></div>
+                    <input asp-for="Num4" type="text" class="form-input" />
+                </div>
+                <button type="submit" class="form-button">Submit</button>
+            </form>
+        </div>
     </div>
 </div>
