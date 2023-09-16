@@ -13,19 +13,26 @@
             <div class="nav-item"><a asp-controller="Contact" asp-action="Index">Contact</a></div>
         </div>
     </div>
-    <div class="results">
+    <div class="results-div">
         @if (ViewBag.Result != null)
         {
-            <p>Result: @ViewBag.Result</p>
-            <p>
-                For a visual representation of matricies in Euclidean space you can visit the
-                <a href="https://www.khanacademy.org/computer-programming/linear-transformation-playground-determinant-edition/6721406349426688" target="_blank">matrix interactive simulator</a>
-                for more information.
-            </p>
+            <div class="results-container">
+                <div class="results">
+                    <p class="number">Result: @ViewBag.Result</p>
+                    <p>For a visual representation of matricies in Euclidean space you can visit the link below for more information.</p>
+                    <a class="link" href="https://www.khanacademy.org/computer-programming/linear-transformation-playground-determinant-edition/6721406349426688" target="_blank">matrix interactive simulator</a>
+                </div>
+            </div>
         }
         else
         {
-            <p>Fatal error, please input integers only. If you wish to leave a space blank, insert a "0"</p>
+            <div class="results-container">
+                <div class="results">
+                    <p>Fatal error, please input integers only.</p>
+                    <p>If you wish to leave a space blank, insert a "0".</p>
+                </div>
+            </div>
+           
         }
     </div>
 </div>
