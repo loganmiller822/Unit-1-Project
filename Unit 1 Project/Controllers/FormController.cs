@@ -12,7 +12,7 @@ namespace Unit_1_Project.Controllers
         }
 
         [HttpPost]
-        public IActionResult DisplayActionName(GarrettModel Model)
+        public IActionResult DisplayActionName(MatrixModel Model)
         {
             if (ModelState.IsValid)
             { 

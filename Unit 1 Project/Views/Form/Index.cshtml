@@ -1,16 +1,26 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@model GarrettModel
+﻿@model MatrixModel
 @{
+    ViewBag.Title = "Form";
 }
-<h1>2D Matrix Determinant Calculator</h1>
-<form asp-controller="Form" asp-action="DisplayActionName" method="post">
-<input asp-for="Num1" type="text" />
-<input asp-for="Num2" type="text" />
-<br>
-<input asp-for="Num3" type="text"/>
-<input asp-for="Num4" type="text" />
-<button type="submit">Submit</button>
-</form>
+<div class="main">
+    <div class="header">
+        <h1 class="header-text">2D Matrix Determinant Calculator</h1>
+    </div>
+    <div class="nav-container">
+        <div class="nav">
+            <div class="nav-item"><a asp-controller="Home">Home</a></div>
+            <div class="nav-item"><a asp-controller="Form">Form</a></div>
+            <div class="nav-item"><a asp-controller="Contact">Contact</a></div>
+        </div>
+    </div>
+    <div>
+        <form asp-controller="Form" asp-action="DisplayActionName" method="post">
+            <input asp-for="Num1" type="text" />
+            <input asp-for="Num2" type="text" />
+            <br>
+            <input asp-for="Num3" type="text" />
+            <input asp-for="Num4" type="text" />
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </div>

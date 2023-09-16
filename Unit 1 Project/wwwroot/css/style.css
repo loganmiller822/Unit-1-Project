@@ -1,0 +1,66 @@
+﻿/* Site Styles */
+body {
+    font-family: Tahoma, sans-serif;
+    background-color: rgb(235, 152, 78);
+    color: rgb(240, 234, 214);
+}
+
+div.header {
+    width: 100%;
+    height: 100px;
+    outline: 5px solid rgb(240, 234, 214);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+h1.header-text {
+    font-size: 2.25em;
+}
+
+/* Home Page Styles */
+div.nav-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+div.nav {
+    outline: 5px solid rgb(240, 234, 214);
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+div.nav-item {
+    text-align: center;
+    width: 33.333333333333333333333%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+a {
+    font-size: 1.25em;
+}
+
+a:link {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+a:visited {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+div.info-container {
+    width: 100%;
+    height: 250px;
+    outline: 5px solid rgb(240, 234, 214);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
